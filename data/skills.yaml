@@ -1,0 +1,54 @@
+intro: "Dove la progettazione edile incontra impianti, dati e automazione."
+
+domains:
+  - title: "Building Automation (BACS)"
+    icon: "microchip"
+    description: "Sistemi di supervisione e controllo per edifici residenziali e pubblici, logiche di regolazione e monitoraggio da remoto."
+  - title: "Progettazione energetica"
+    icon: "bolt"
+    description: "Valutazione della prestazione energetica, edifici NZEB e ottimizzazione dei consumi impiantistici."
+  - title: "Impianti e VMC"
+    icon: "wind"
+    description: "Gestione integrata degli impianti, ventilazione meccanica controllata e qualità dell'aria interna."
+  - title: "BIM & CAD"
+    icon: "cubes"
+    description: "Modellazione architettonica, strutturale e MEP in Revit, editing di famiglie, disegno 2D/3D."
+  - title: "Reti e protocolli"
+    icon: "network-wired"
+    description: "Gestione di reti informatiche e protocolli di comunicazione per l'integrazione dei dispositivi."
+  - title: "Rilievo e fotogrammetria"
+    icon: "camera"
+    description: "Rilievi architettonici con Agisoft Metashape e tour virtuali con Pano2VR."
+
+technical_groups:
+  - title: "BIM, CAD ed energia"
+    skills:
+      - { name: "Revit",          icon: "building",  level: 5 }
+      - { name: "AutoCAD 2D/3D",  icon: "pen-ruler", level: 5 }
+      - { name: "ArchiCAD",       icon: "compass-drafting" }
+      - { name: "Termo Namirial", icon: "temperature-half" }
+  - title: "Automazione e codice"
+    skills:
+      - { name: "Home Assistant", icon: "house-signal" }
+      - { name: "Python",         icon: "code",       level: 4 }
+      - { name: "JavaScript",     icon: "code",       level: 5 }
+      - { name: "MATLAB",         icon: "square-root-variable" }
+      - { name: "LaTeX",          icon: "file-lines" }
+  - title: "Grafica e rilievo"
+    skills:
+      - { name: "Photoshop · Illustrator · InDesign", icon: "pen-nib", level: 4 }
+      - { name: "Agisoft Metashape", icon: "cube",    level: 4 }
+      - { name: "Pano2VR",           icon: "vr-cardboard" }
+      - { name: "Microsoft Office",  icon: "table",   level: 5 }
+
+languages:
+  - { name: "Italiano", level: "Madrelingua" }
+  - { name: "Inglese",  level: "B2" }
+
+soft:
+  - "Problem solving"
+  - "Gestione delle priorità"
+  - "Lavoro in team"
+  - "Precisione"
+  - "Flessibilità"
+  - "Chiarezza espositiva"

@@ -1,0 +1,53 @@
+# ─────────────────────────────────────────────────────────────
+#  Portfolio – Luca De Zuane
+#  Tema: ldz-canvas (derivato da CareerCanvas di Felipe Cordero, MIT)
+# ─────────────────────────────────────────────────────────────
+
+# In GitHub Actions il baseURL viene sovrascritto automaticamente
+# con l'indirizzo corretto delle Pages (vedi .github/workflows/hugo.yml).
+baseURL = "https://example.github.io/"
+locale = "it-IT"
+defaultContentLanguage = "it"
+title = "Luca De Zuane"
+theme = "ldz-canvas"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term", "RSS"]
+
+[params]
+  firstName   = "Luca"
+  lastName    = "De Zuane"
+  role        = "Ingegnere Edile · Building Automation & Energia"
+  kicker      = "Ing. · Building Automation · Energia · BIM"
+  description = "Ingegnere edile specializzato in Building Automation Control System, impianti e gestione energetica degli edifici. Numana (AN)."
+  # Frasi che ruotano nell'hero (separate)
+  taglines = [
+    "Edifici che consumano meno.",
+    "Impianti che dialogano tra loro.",
+    "Comfort misurato, non stimato.",
+  ]
+  hero_location = "Numana (AN), Italia"
+  profile_image = "images/profile.jpg"
+  logo          = "images/logo.svg"
+  og_image      = "images/icon-192.png"
+
+  # Contatti pubblici
+  email = "luca@ldzengineering.it"
+  # Telefono: lascialo vuoto per non pubblicarlo sul sito
+  phone = ""
+  linkedin_url = ""          # es. "https://www.linkedin.com/in/..."
+  github_url   = ""          # es. "https://github.com/..."
+
+  # CV scaricabile: metti una versione senza indirizzo di casa in static/files/
+  # e indica qui il percorso, es. "files/CV-Luca-De-Zuane.pdf". Vuoto = pulsante nascosto.
+  resume_url = ""
+
+  # Modulo contatti opzionale (https://formspree.io). Vuoto = solo link e-mail.
+  formspree_endpoint = ""
+
+  copyright = "Luca De Zuane · Ingegnere"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[outputs]
+  home = ["HTML"]

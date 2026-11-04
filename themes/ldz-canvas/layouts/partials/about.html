@@ -1,0 +1,40 @@
+{{ with hugo.Data.about }}
+<section id="about" class="section section--page">
+  <div class="container">
+
+    <div class="about">
+      <div class="about__main reveal">
+        <figure class="about__photo">
+          <img src="{{ site.Params.profile_image | relURL }}" alt="Ritratto di {{ site.Params.firstName }} {{ site.Params.lastName }}" width="250" height="250" loading="lazy">
+          <img class="about__badge" src="{{ site.Params.logo | relURL }}" alt="" width="44" height="44" loading="lazy">
+        </figure>
+        <div class="prose">
+          <p class="lead">{{ .intro | markdownify }}</p>
+          {{ range .body }}<p>{{ . | markdownify }}</p>{{ end }}
+        </div>
+      </div>
+
+      <aside class="about__side reveal">
+        <div class="stats">
+          {{ range .stats }}
+            {{ $v := .value }}
+            {{ with .since }}{{ $v = string (sub now.Year .) }}{{ end }}
+            <div class="stat">
+              <span class="stat__value"><span data-count="{{ $v }}">{{ $v }}</span>{{ with .suffix }}<small>{{ . }}</small>{{ end }}</span>
+              <span class="stat__label">{{ .label }}</span>
+            </div>
+          {{ end }}
+        </div>
+        <ul class="facts">
+          {{ range .quickfacts }}
+          <li>
+            <i class="fa-solid fa-{{ .icon }}" aria-hidden="true"></i>
+            <div><span class="facts__title">{{ .title }}</span><span>{{ .value }}</span></div>
+          </li>
+          {{ end }}
+        </ul>
+      </aside>
+    </div>
+  </div>
+</section>
+{{ end }}

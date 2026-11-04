@@ -1,0 +1,102 @@
+<svg class="bldg" id="house" viewBox="10 24 500 418" role="group" aria-labelledby="bldgTitle">
+  <title id="bldgTitle">Sezione di una casa con VMC, fotovoltaico, sensori e luci comandabili dallo smartphone</title>
+  <!-- Sole -->
+  <g class="bldg__sun" aria-hidden="true">
+    <circle cx="448" cy="72" r="15"/>
+    <g class="bldg__rays">
+      <line x1="448" y1="44" x2="448" y2="34"/><line x1="448" y1="100" x2="448" y2="110"/>
+      <line x1="420" y1="72" x2="410" y2="72"/><line x1="476" y1="72" x2="486" y2="72"/>
+      <line x1="428" y1="52" x2="421" y2="45"/><line x1="468" y1="92" x2="475" y2="99"/>
+      <line x1="468" y1="52" x2="475" y2="45"/><line x1="428" y1="92" x2="421" y2="99"/>
+    </g>
+  </g>
+  <path class="bldg__beam" d="M434 86 L344 166" aria-hidden="true"/>
+
+  <!-- Terreno e quota -->
+  <path class="bldg__ground draw" pathLength="1" d="M20 400 H480"/>
+  <g class="bldg__dim" aria-hidden="true">
+    <path d="M120 420 H400 M120 414 V426 M400 414 V426"/>
+    <text x="260" y="436" text-anchor="middle">sezione A–A′</text>
+  </g>
+
+  <!-- Luci: coni luminosi sotto le lampade -->
+  <g class="bldg__lights" aria-hidden="true">
+    <polygon class="cone" data-zone="giorno" points="184,330 196,330 226,399 154,399"/>
+    <polygon class="cone" data-zone="notte" points="174,255 186,255 210,311 150,311"/>
+    <polygon class="cone" data-zone="notte" points="329,255 341,255 365,311 305,311"/>
+  </g>
+
+  <!-- Involucro: falde, muri, isolamento -->
+  <path class="bldg__roof draw" pathLength="1" d="M100 245 L260 116 L420 245"/>
+  <path class="bldg__wall draw" pathLength="1" d="M120 400 V232 M400 400 V232"/>
+  <path class="bldg__insul draw" pathLength="1" d="M132 400 V238 L260 136 L388 238 V400"/>
+  <path class="bldg__slab draw" pathLength="1" d="M132 238 H388 M132 312 H388"/>
+
+  <!-- Fotovoltaico sulla falda -->
+  <path class="bldg__pv" d="M304 147 L366 196"/>
+  <path class="bldg__pv-cells" d="M304 147 L366 196"/>
+
+  <!-- Serramenti -->
+  <g class="bldg__win draw-late">
+    <rect x="160" y="334" width="42" height="40" rx="1"/><path d="M181 334 V374"/>
+    <rect x="302" y="344" width="32" height="56" rx="1"/>
+    <rect x="164" y="256" width="38" height="34" rx="1"/><path d="M183 256 V290"/>
+    <rect x="316" y="256" width="38" height="34" rx="1"/><path d="M335 256 V290"/>
+  </g>
+
+  <!-- Lampade -->
+  <g class="bldg__lamps" aria-hidden="true">
+    <g class="lamp" data-zone="giorno"><path d="M190 312 V322"/><circle cx="190" cy="326" r="4"/></g>
+    <g class="lamp" data-zone="notte"><path d="M180 238 V247"/><circle cx="180" cy="251" r="4"/></g>
+    <g class="lamp" data-zone="notte"><path d="M335 238 V247"/><circle cx="335" cy="251" r="4"/></g>
+  </g>
+
+  <!-- VMC: unità di recupero e canali -->
+  <g class="bldg__ducts">
+    <path class="duct" d="M200 150 V213 H234"/>
+    <path class="duct" d="M286 206 H320 V150"/>
+    <path class="duct" d="M248 227 V330 H214 M248 272 H208"/>
+    <path class="duct" d="M272 227 V362 H296 M272 280 H310"/>
+    <path class="flow flow--out-air" d="M200 150 V213 H234"/>
+    <path class="flow flow--exhaust" d="M286 206 H320 V150"/>
+    <path class="flow flow--supply" d="M248 227 V330 H214 M248 272 H208"/>
+    <path class="flow flow--extract" d="M310 280 H272 M296 362 H272 V227"/>
+  </g>
+  <g class="bldg__unit">
+    <rect x="234" y="198" width="52" height="29" rx="4"/>
+    <g class="bldg__fan"><circle cx="260" cy="212.5" r="8"/><path d="M260 205 V220 M252.5 212.5 H267.5"/></g>
+  </g>
+
+  <!-- Gateway domotico (riceve i comandi) -->
+  <g class="bldg__gw" aria-hidden="true">
+    <rect x="140" y="378" width="16" height="12" rx="2"/>
+    <path class="gw-wave" d="M143 374 q5 -5 10 0 M140 370 q8 -8 16 0"/>
+  </g>
+
+  <!-- Sensori -->
+  <g class="bldg__sensor"><circle class="ping" cx="226" cy="290" r="4"/><circle cx="226" cy="290" r="4"/></g>
+  <g class="bldg__sensor bldg__sensor--b"><circle class="ping" cx="236" cy="384" r="4"/><circle cx="236" cy="384" r="4"/></g>
+
+  <!-- Segnale radio dal telefono al gateway -->
+  <path class="bldg__signal" id="signal" d="M88 352 Q 116 330 148 376" aria-hidden="true"/>
+
+  <!-- Persona con smartphone: cliccabile -->
+  <g class="person" id="person" role="button" tabindex="0" aria-label="Persona con smartphone: tocca per accendere o spegnere le luci di casa">
+    <rect class="person__hit" x="44" y="330" width="56" height="74" fill="transparent"/>
+    <circle class="person__ring" cx="86" cy="357" r="9"/>
+    <circle class="person__head" cx="66" cy="345" r="7"/>
+    <path class="person__body" d="M66 353 V381 M66 381 L59 399 M66 381 L73 399 M66 361 L56 375 M66 362 L80 366 L84 361"/>
+    <rect class="person__phone" x="82" y="351" width="8" height="12" rx="1.5"/>
+    <rect class="person__screen" x="83.5" y="353" width="5" height="7" rx=".8"/>
+  </g>
+
+  <!-- Etichette tecniche -->
+  <g class="bldg__labels" aria-hidden="true">
+    <text x="292" y="194">VMC</text>
+    <text x="372" y="190">PV</text>
+    <text x="146" y="146">aria est.</text>
+    <text x="326" y="142">espulsione</text>
+    <text x="190" y="304">T · RH</text>
+    <text x="244" y="380" dx="6">CO₂</text>
+  </g>
+</svg>

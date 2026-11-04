@@ -1,0 +1,50 @@
+{{ with hugo.Data.experience }}
+<section id="experience" class="section section--page">
+  <div class="container">
+
+    <div class="timeline" id="timeline">
+    <div class="timeline__cable" aria-hidden="true"><span id="cableFill"></span></div>
+    <ol class="timeline__list">
+      {{ range $i, $p := .positions }}
+      <li class="timeline__item reveal" data-node>
+        <span class="timeline__node" aria-hidden="true"></span>
+        <article class="card job">
+          <header class="job__head">
+            <p class="job__period"><i class="fa-regular fa-calendar" aria-hidden="true"></i> {{ $p.period }}{{ if in $p.period "oggi" }} <span class="live">in corso</span>{{ end }}</p>
+            <h3>{{ $p.role }}</h3>
+            <p class="job__company">
+              {{ if $p.company_url }}<a href="{{ $p.company_url }}" target="_blank" rel="noopener">{{ $p.company }} <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>{{ else }}{{ $p.company }}{{ end }}
+            </p>
+          </header>
+          <div class="job__tags">
+            {{ with $p.industry }}<span class="tag"><i class="fa-solid fa-industry" aria-hidden="true"></i>{{ . }}</span>{{ end }}
+            {{ with $p.location }}<span class="tag"><i class="fa-solid fa-location-dot" aria-hidden="true"></i>{{ . }}</span>{{ end }}
+          </div>
+          {{ with $p.bullet_points }}
+          <ul class="job__list">
+            {{ range . }}<li>{{ . | markdownify }}</li>{{ end }}
+          </ul>
+          {{ end }}
+        </article>
+      </li>
+      {{ end }}
+    </ol>
+    </div>
+
+    {{ with .others }}
+    <div class="others reveal">
+      <h3 class="others__title">Altre esperienze</h3>
+      <ul>
+        {{ range . }}
+        <li>
+          <span class="others__period">{{ .period }}</span>
+          <span><strong>{{ .role }}</strong> · {{ .company }}, {{ .location }}</span>
+          {{ with .note }}<span class="others__note">{{ . }}</span>{{ end }}
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

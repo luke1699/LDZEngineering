@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ site.Language.Locale | default "it" }}">
+<head>
+  <script>
+    /* Tema chiaro/scuro: rispetta la scelta salvata, altrimenti il sistema */
+    document.documentElement.classList.add('js');
+    (function () {
+      try {
+        var t = localStorage.getItem('ldz-theme');
+        if (t !== 'dark' && t !== 'light') t = null;
+      } catch (e) { var t = null; }
+      if (!t) t = window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
+  {{ partial "head.html" . }}
+</head>
+<body>
+  <a class="skip-link" href="#main">Vai al contenuto</a>
+  {{ partial "nav.html" . }}
+  <main id="main">
+    {{ block "main" . }}{{ end }}
+  </main>
+  {{ partial "footer.html" . }}
+
+  {{ $js := resources.Get "js/main.js" | js.Build (dict "minify" hugo.IsProduction) }}
+  {{ if hugo.IsProduction }}{{ $js = $js | fingerprint }}{{ end }}
+  <script src="{{ $js.RelPermalink }}" defer></script>
+</body>
+</html>

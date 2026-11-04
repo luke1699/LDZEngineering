@@ -1,0 +1,26 @@
+<header class="nav" id="nav">
+  <div class="container nav__inner">
+    <a class="nav__brand" href="{{ "" | relURL }}" aria-label="Home">
+      <img src="{{ site.Params.logo | relURL }}" alt="" width="34" height="34">
+      <span>{{ site.Params.firstName }} <strong>{{ site.Params.lastName }}</strong></span>
+    </a>
+    <nav aria-label="Sezioni">
+      <ul class="nav__links" id="navLinks">
+        {{ $cur := . }}
+        {{ range site.Menus.main }}
+        <li><a href="{{ .URL }}"{{ if $cur.IsMenuCurrent "main" . }} class="is-active" aria-current="page"{{ end }}>{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    </nav>
+    <div class="nav__actions">
+      <button class="icon-btn" id="themeToggle" type="button" aria-label="Cambia tema chiaro/scuro">
+        <i class="fa-solid fa-sun icon-light" aria-hidden="true"></i>
+        <i class="fa-solid fa-moon icon-dark" aria-hidden="true"></i>
+      </button>
+      <button class="icon-btn nav__burger" id="navToggle" type="button" aria-label="Apri menu" aria-expanded="false" aria-controls="navLinks">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+  <div class="nav__progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+</header>

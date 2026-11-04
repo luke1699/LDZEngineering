@@ -1,0 +1,62 @@
+# Esperienze professionali (dalla più recente).
+# Campi: role, company, company_url, period, location, industry, tag, bullet_points
+intro: "Dal cantiere al quadro di controllo: le esperienze che hanno formato il mio approccio."
+
+positions:
+  - role: "Sviluppo sistema di Building Automation"
+    company: "LDZ Engineering"
+    period: "09/2022 – oggi"
+    location: "Numana (AN)"
+    industry: "Building Automation"
+    tag: "Progetto"
+    bullet_points:
+      - "Sviluppo di un sistema di **supervisione e controllo** per aumentare vivibilità, comfort e sicurezza degli edifici."
+      - "Obiettivo: ridurre **impatto ambientale e costi in bolletta**, con gestione anche da remoto."
+      - "Architettura espandibile e personalizzabile, applicabile al **settore residenziale e pubblico**."
+
+  - role: "Collaboratore"
+    company: "AB Engineering"
+    period: "09/2023 – oggi"
+    location: "Osimo (AN)"
+    industry: "Ingegneria"
+    # Aggiungi qui le attività svolte, ad esempio:
+    # bullet_points:
+    #   - "Progettazione impianti ..."
+    bullet_points: []
+
+  - role: "Sorveglianza anti-COVID"
+    company: "Presidenza della Facoltà di Ingegneria – UNIVPM"
+    period: "02/2022 – 03/2022"
+    location: "Ancona"
+    industry: "Università"
+    bullet_points: []
+
+  - role: "Tutor universitario"
+    company: "Ufficio Diritto allo Studio – UNIVPM"
+    company_url: "https://www.univpm.it"
+    period: "11/2020 – 02/2021"
+    location: "Ancona"
+    industry: "Istruzione"
+    bullet_points:
+      - "Tutoraggio nelle materie della triennale di Ingegneria Edile: **Geometria (Algebra lineare)** e **Idraulica**."
+
+  - role: "Alternanza scuola-lavoro"
+    company: "Studio Tecnico Buglioni Ing. Francesca"
+    period: "01/2017 – 02/2017"
+    location: "Osimo (AN)"
+    industry: "Costruzioni"
+    bullet_points:
+      - "Servizi professionali di architettura, costruzione, ingegneria, ispezione e catasto."
+
+# Esperienze extra (mostrate in forma compatta)
+others:
+  - role: "Bagnino di piscina"
+    company: "Sea Green Resort"
+    period: "06/2022 – 09/2022"
+    location: "Numana (AN)"
+    note: "Manutenzione piscina, gestione accessi, pulizia vasca e aree verdi."
+  - role: "Bagnino di piscina"
+    company: "La Nuova Isola"
+    period: "07/2019 – 08/2019"
+    location: "Osimo (AN)"
+    note: "Sicurezza bagnanti in un complesso di 3 piscine."

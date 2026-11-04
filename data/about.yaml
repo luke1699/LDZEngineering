@@ -1,0 +1,27 @@
+title: "Chi sono"
+intro: >-
+  Sono un ingegnere edile abilitato, specializzato in **Building Automation Control System**
+  e nella **gestione integrata degli impianti** all'interno degli edifici.
+body:
+  - >-
+    Il mio lavoro parte da una convinzione semplice: un edificio efficiente non è solo ben isolato,
+    è un sistema in cui involucro, impianti e controllo lavorano insieme. Per questo unisco
+    la progettazione edile e BIM a sensori, reti e logiche di regolazione.
+  - >-
+    Nella tesi magistrale ho sviluppato una soluzione di building management per il risparmio energetico
+    e l'ottimizzazione di impianti di VMC esistenti; oggi porto avanti un sistema di supervisione
+    pensato per migliorare comfort, sicurezza e consumi, gestibile anche da remoto.
+  - >-
+    Mi interessa capire il linguaggio di ogni figura del cantiere – idraulico, elettricista, progettista –
+    perché parlare la stessa lingua riduce gli errori e rende i progetti più solidi.
+quickfacts:
+  - { icon: "user-tie",      title: "Professione", value: "Ingegnere edile, iscritto all'Ordine di Ancona" }
+  - { icon: "location-dot",  title: "Base",        value: "Numana (AN) · Marche" }
+  - { icon: "language",      title: "Lingue",      value: "Italiano (madrelingua) · Inglese B2" }
+  - { icon: "car",           title: "Patente",     value: "B, AM" }
+  - { icon: "droplet",       title: "Volontariato", value: "Donatore AVIS dal 2017" }
+  - { icon: "dumbbell",      title: "Interessi",   value: "Edilizia, informatica, palestra" }
+stats:
+  - { value: "2023", label: "Laurea magistrale" }
+  - { value: "103", suffix: "/110", label: "Voto triennale" }
+  - { value: "3", label: "Anni di sviluppo BACS", since: 2022 }

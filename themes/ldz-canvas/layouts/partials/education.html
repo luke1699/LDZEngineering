@@ -1,0 +1,23 @@
+{{ with hugo.Data.education }}
+<section id="education" class="section section--page">
+  <div class="container">
+
+    <ol class="strata">
+      {{ range $i, $e := .items }}
+      <li class="stratum reveal{{ if $e.highlight }} stratum--top{{ end }}" style="--i: {{ $i }}">
+        <span class="stratum__hatch" aria-hidden="true"></span>
+        <div class="stratum__body">
+          <div class="stratum__meta">
+            <span class="stratum__period">{{ $e.period }}</span>
+            {{ with $e.grade }}<span class="stratum__grade">{{ . }}</span>{{ end }}
+          </div>
+          <h3><i class="fa-solid fa-{{ $e.icon | default "graduation-cap" }}" aria-hidden="true"></i>{{ $e.title }}</h3>
+          <p class="stratum__school">{{ if $e.school_url }}<a href="{{ $e.school_url }}" target="_blank" rel="noopener">{{ $e.school }}</a>{{ else }}{{ $e.school }}{{ end }}{{ with $e.field }} · {{ . }}{{ end }}</p>
+          {{ with $e.thesis }}<p class="stratum__thesis"><span>Tesi</span> {{ . }}</p>{{ end }}
+        </div>
+      </li>
+      {{ end }}
+    </ol>
+  </div>
+</section>
+{{ end }}

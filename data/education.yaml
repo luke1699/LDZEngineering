@@ -1,0 +1,33 @@
+intro: "Un percorso costruito strato dopo strato, come un pacchetto murario ben progettato."
+
+items:
+  - title: "Abilitazione professionale"
+    school: "Ordine degli Ingegneri della Provincia di Ancona"
+    period: "01/2024"
+    icon: "stamp"
+    highlight: true
+
+  - title: "Laurea Magistrale in Ingegneria Edile – Impianti e Sistemi di Controllo"
+    school: "Università Politecnica delle Marche"
+    school_url: "https://www.ingegneria.univpm.it"
+    period: "2021 – 2023"
+    field: "LM-24 · Ingegneria dei Sistemi Edilizi"
+    thesis: "Development of a building management solution for energy saving and optimization of pre-existing VMC systems"
+    icon: "microchip"
+
+  - title: "Laurea Triennale in Ingegneria Edile"
+    school: "Università Politecnica delle Marche"
+    school_url: "https://www.ingegneria.univpm.it"
+    period: "2018 – 2021"
+    field: "L-23 · Scienze e Tecniche dell'Edilizia"
+    grade: "103/110"
+    thesis: "Structural Insulated Panels (SIP): applicazioni per l'ingegneria delle costruzioni e modellazione teorica"
+    icon: "layer-group"
+
+  - title: "Diploma di Geometra – Costruzioni, Ambiente e Territorio"
+    school: "IIS \"Corridoni – Campana\", Osimo"
+    school_url: "https://corridoni-campana.it"
+    period: "2014 – 2018"
+    grade: "77/100"
+    thesis: "Bio-Architettura"
+    icon: "compass-drafting"

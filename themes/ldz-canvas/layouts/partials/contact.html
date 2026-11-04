@@ -1,0 +1,37 @@
+<section id="contact" class="section section--page contact">
+  <div class="container contact__inner">
+
+    <div class="contact__grid">
+      <ul class="contact__list reveal">
+        {{ with site.Params.email }}
+        <li><a class="card contact__item" href="mailto:{{ . }}"><i class="fa-solid fa-envelope" aria-hidden="true"></i><span><small>E-mail</small>{{ . }}</span></a></li>
+        {{ end }}
+        {{ with site.Params.phone }}
+        <li><a class="card contact__item" href="tel:{{ replace . " " "" }}"><i class="fa-solid fa-phone" aria-hidden="true"></i><span><small>Telefono</small>{{ . }}</span></a></li>
+        {{ end }}
+        {{ with site.Params.linkedin_url }}
+        <li><a class="card contact__item" href="{{ . }}" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i><span><small>LinkedIn</small>Profilo professionale</span></a></li>
+        {{ end }}
+        {{ with site.Params.github_url }}
+        <li><a class="card contact__item" href="{{ . }}" target="_blank" rel="noopener"><i class="fa-brands fa-github" aria-hidden="true"></i><span><small>GitHub</small>Progetti e codice</span></a></li>
+        {{ end }}
+        <li><div class="card contact__item"><i class="fa-solid fa-location-dot" aria-hidden="true"></i><span><small>Base operativa</small>{{ site.Params.hero_location }}</span></div></li>
+      </ul>
+
+      {{ with site.Params.formspree_endpoint }}
+      <form class="card form reveal" action="{{ . }}" method="POST">
+        <label>Nome<input name="name" type="text" required autocomplete="name"></label>
+        <label>E-mail<input name="email" type="email" required autocomplete="email"></label>
+        <label>Messaggio<textarea name="message" rows="5" required></textarea></label>
+        <button class="btn btn--primary" type="submit"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Invia</button>
+      </form>
+      {{ else }}
+      <div class="card contact__cta reveal">
+        <img src="{{ site.Params.logo | relURL }}" alt="" width="96" height="96" loading="lazy">
+        <p>Il modo più rapido per raggiungermi è via e-mail.</p>
+        {{ with site.Params.email }}<a class="btn btn--primary" href="mailto:{{ . }}"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Scrivimi</a>{{ end }}
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

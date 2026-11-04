@@ -1,0 +1,41 @@
+{{ with hugo.Data.skills }}
+<section id="skills" class="section section--page">
+  <div class="container">
+
+    <div class="cards">
+      {{ range .domains }}
+      <article class="card domain reveal">
+        <span class="domain__icon"><i class="fa-solid fa-{{ .icon }}" aria-hidden="true"></i></span>
+        <h3>{{ .title }}</h3>
+        <p>{{ .description }}</p>
+      </article>
+      {{ end }}
+    </div>
+
+    <div class="tech">
+      {{ range .technical_groups }}
+      <div class="tech__group card reveal">
+        <h3 class="tech__title">{{ .title }}</h3>
+        <ul>
+          {{ range .skills }}
+          <li class="tech__item">
+            <span class="tech__name"><i class="fa-solid fa-{{ .icon }}" aria-hidden="true"></i>{{ .name }}</span>
+            {{ with .level }}
+            <span class="meter" role="img" aria-label="Livello {{ . }} su 5" data-lvl="{{ . }}">
+              {{ range seq 5 }}<i></i>{{ end }}
+            </span>
+            {{ end }}
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+    </div>
+
+    <div class="chips reveal">
+      {{ range .languages }}<span class="chip chip--lang"><i class="fa-solid fa-language" aria-hidden="true"></i>{{ .name }} · {{ .level }}</span>{{ end }}
+      {{ range .soft }}<span class="chip">{{ . }}</span>{{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

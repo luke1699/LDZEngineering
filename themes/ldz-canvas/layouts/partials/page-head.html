@@ -1,0 +1,17 @@
+<header class="page-head">
+  <div class="hero__grid" aria-hidden="true"></div>
+  <div class="container page-head__inner">
+    <div>
+      <nav class="crumbs reveal" aria-label="Percorso">
+        <a href="{{ "" | relURL }}">Home</a><span aria-hidden="true">/</span><span>{{ .Title }}</span>
+      </nav>
+      <p class="eyebrow reveal">{{ .Params.eyebrow }}</p>
+      <h1 class="page-head__title reveal">{{ .Title }}</h1>
+      {{ with .Params.intro }}<p class="page-head__intro reveal">{{ . }}</p>{{ end }}
+    </div>
+    <div class="page-head__mark reveal" aria-hidden="true">
+      <svg viewBox="0 0 120 120"><circle class="ph-ring" cx="60" cy="60" r="40" fill="none" stroke-width="1.5"/></svg>
+      <i class="fa-solid fa-{{ .Params.icon | default "circle" }}"></i>
+    </div>
+  </div>
+</header>

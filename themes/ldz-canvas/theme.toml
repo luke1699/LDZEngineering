@@ -1,0 +1,10 @@
+name = "ldz-canvas"
+license = "MIT"
+description = "Portfolio per ingegneria edile ed energetica, derivato da CareerCanvas"
+min_version = "0.158.0"
+[author]
+  name = "Luca De Zuane"
+[original]
+  name = "CareerCanvas"
+  author = "Felipe Cordero"
+  repo = "https://github.com/felipecordero/careercanvas"

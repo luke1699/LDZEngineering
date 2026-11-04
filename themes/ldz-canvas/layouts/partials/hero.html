@@ -1,0 +1,25 @@
+<section id="home" class="hero">
+  <div class="hero__grid" aria-hidden="true"></div>
+  <div class="container hero__inner">
+    <div class="hero__text">
+      <p class="kicker reveal"><span class="kicker__dot"></span>{{ site.Params.kicker | default site.Params.role }}</p>
+      <h1 class="hero__name reveal">{{ site.Params.firstName }}<br><span>{{ site.Params.lastName }}</span></h1>
+      <p class="hero__tagline reveal" aria-live="polite">
+        <span id="tagline" data-lines="{{ delimit site.Params.taglines "|" }}">{{ index site.Params.taglines 0 }}</span><span class="caret" aria-hidden="true"></span>
+      </p>
+      <p class="hero__desc reveal">{{ site.Params.description }}</p>
+      <div class="hero__cta reveal">
+        <a class="btn btn--primary" href="{{ "contatti/" | relURL }}"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Contattami</a>
+        <a class="btn btn--ghost" href="{{ "esperienze/" | relURL }}"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i> Esperienze</a>
+        {{ with site.Params.resume_url }}<a class="btn btn--ghost" href="{{ . | relURL }}" target="_blank" rel="noopener"><i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i> CV</a>{{ end }}
+      </div>
+      <p class="hero__loc reveal"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> {{ site.Params.hero_location }}</p>
+    </div>
+
+    <div class="hero__visual reveal">
+      {{ partial "building-svg.html" . }}
+      <p class="hero__hint" id="houseHint"><span aria-hidden="true">↳</span> tocca la persona per accendere le luci</p>
+    </div>
+  </div>
+  <a class="hero__scroll" href="#cosa-faccio" aria-label="Scorri alla sezione successiva"><span></span></a>
+</section>

@@ -1,0 +1,42 @@
+{{ with hugo.Data.home }}
+<section id="cosa-faccio" class="section section--alt">
+  <div class="container">
+    <header class="section__head reveal">
+      <p class="eyebrow">Cosa faccio</p>
+      <h2>{{ .title }}</h2>
+      <p class="section__intro">{{ .intro }}</p>
+    </header>
+    <div class="cards">
+      {{ range .services }}
+      <article class="card domain reveal">
+        <span class="domain__icon"><i class="fa-solid fa-{{ .icon }}" aria-hidden="true"></i></span>
+        <h3>{{ .title }}</h3>
+        <p>{{ .text }}</p>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+<section class="section">
+  <div class="container">
+    <header class="section__head reveal">
+      <p class="eyebrow">Esplora</p>
+      <h2>Il mio lavoro, pagina per pagina</h2>
+    </header>
+    <div class="explore">
+      {{ range site.Menus.main }}
+      {{ with .Page }}
+      <a class="card explore__item reveal" href="{{ .RelPermalink }}">
+        <span class="explore__num">{{ index (split .Params.eyebrow " ") 0 }}</span>
+        <span class="domain__icon"><i class="fa-solid fa-{{ .Params.icon }}" aria-hidden="true"></i></span>
+        <span class="explore__title">{{ .Title }}</span>
+        <span class="explore__text">{{ .Params.summary }}</span>
+        <span class="explore__go" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+      </a>
+      {{ end }}
+      {{ end }}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,20 @@
+{{ $menu := site.Menus.main }}
+{{ $next := "" }}{{ $prev := "" }}
+{{ range $i, $m := $menu }}
+  {{ if eq $m.Page $ }}
+    {{ if lt (add $i 1) (len $menu) }}{{ $next = index $menu (add $i 1) }}{{ end }}
+    {{ if gt $i 0 }}{{ $prev = index $menu (sub $i 1) }}{{ end }}
+  {{ end }}
+{{ end }}
+<nav class="pager container" aria-label="Pagine">
+  {{ with $prev }}
+  <a class="card pager__link" href="{{ .URL }}"><small><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Precedente</small><span>{{ .Name }}</span></a>
+  {{ else }}
+  <a class="card pager__link" href="{{ "" | relURL }}"><small><i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Torna a</small><span>Home</span></a>
+  {{ end }}
+  {{ with $next }}
+  <a class="card pager__link pager__link--next" href="{{ .URL }}"><small>Successiva <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></small><span>{{ .Name }}</span></a>
+  {{ else }}
+  <a class="card pager__link pager__link--next" href="{{ "" | relURL }}"><small>Torna alla <i class="fa-solid fa-house" aria-hidden="true"></i></small><span>Home</span></a>
+  {{ end }}
+</nav>

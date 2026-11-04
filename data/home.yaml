@@ -1,0 +1,12 @@
+title: "Edifici che pensano, consumano meno e si gestiscono da remoto"
+intro: "Tre ambiti che porto avanti insieme, perché un edificio efficiente nasce dall'integrazione."
+services:
+  - icon: "house-signal"
+    title: "Domotica e Building Automation"
+    text: "Luci, tapparelle, clima e scenari programmati in un unico sistema di supervisione, controllabile anche dallo smartphone. Prova la casa qui sopra."
+  - icon: "bolt"
+    title: "Efficienza energetica"
+    text: "Analisi della prestazione energetica, ottimizzazione della VMC e degli impianti esistenti per ridurre consumi e costi in bolletta."
+  - icon: "cubes"
+    title: "Progettazione BIM"
+    text: "Modellazione architettonica, strutturale e impiantistica in Revit, dal rilievo al progetto esecutivo."
