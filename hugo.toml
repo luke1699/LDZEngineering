@@ -8,7 +8,7 @@
 baseURL = "https://example.github.io/"
 locale = "it-IT"
 defaultContentLanguage = "it"
-title = "Luca De Zuane"
+title = "LDZ Engineering"
 theme = "ldz-canvas"
 enableRobotsTXT = true
 disableKinds = ["taxonomy", "term", "RSS"]
@@ -34,7 +34,7 @@ disableKinds = ["taxonomy", "term", "RSS"]
   email = "luca@ldzengineering.it"
   # Telefono: lascialo vuoto per non pubblicarlo sul sito
   phone = ""
-  linkedin_url = ""          # es. "https://www.linkedin.com/in/..."
+  linkedin_url = "https://www.linkedin.com/in/luca-de-zuane-58146b228?utm_source=share_via&utm_content=profile&utm_medium=member_ios"          # es. "https://www.linkedin.com/in/..."
   github_url   = ""          # es. "https://github.com/..."
 
   # CV scaricabile: metti una versione senza indirizzo di casa in static/files/
