@@ -1,19 +1,26 @@
 title: "Chi sono"
 intro: >-
-  Sono un ingegnere edile abilitato, specializzato in **Building Automation Control System**
-  e nella **gestione integrata degli impianti** all'interno degli edifici.
+  Sono un Ingegnere Edile abilitato, specializzato in **Building Automation and Control Systems** (BACS), 
+  progettazione impiantistica e **gestione integrata dei sistemi tecnologici** degli edifici.
+
 body:
   - >-
-    Il mio lavoro parte da una convinzione semplice: un edificio efficiente non è solo ben isolato,
-    è un sistema in cui involucro, impianti e controllo lavorano insieme. Per questo unisco
-    la progettazione edile e BIM a sensori, reti e logiche di regolazione.
+    La mia attività si fonda su una convinzione: un edificio efficiente non è semplicemente un edificio ben isolato, 
+    ma un sistema integrato in cui involucro, impianti e sistemi di controllo dialogano e lavorano in sinergia.
+    Per questo integro le competenze della progettazione edile e della metodologia BIM con quelle dell'automazione, 
+    sviluppando soluzioni che combinano sensori, reti di comunicazione, sistemi di supervisione e logiche di regolazione 
+    per ottimizzare il funzionamento degli edifici.
   - >-
-    Nella tesi magistrale ho sviluppato una soluzione di building management per il risparmio energetico
-    e l'ottimizzazione di impianti di VMC esistenti; oggi porto avanti un sistema di supervisione
-    pensato per migliorare comfort, sicurezza e consumi, gestibile anche da remoto.
+    Durante la mia tesi magistrale ho sviluppato una soluzione di Building Management orientata al risparmio energetico e 
+    all'ottimizzazione delle prestazioni di impianti di ventilazione meccanica controllata (VMC) esistenti. 
+    Un percorso di ricerca e sviluppo che continua oggi attraverso la realizzazione di un sistema di supervisione e 
+    gestione intelligente degli impianti, progettato per migliorare il comfort ambientale, la sicurezza e l'efficienza energetica, 
+    anche attraverso il controllo e il monitoraggio da remoto.
   - >-
-    Mi interessa capire il linguaggio di ogni figura del cantiere – idraulico, elettricista, progettista –
-    perché parlare la stessa lingua riduce gli errori e rende i progetti più solidi.
+    Credo inoltre che la qualità di un progetto dipenda dalla capacità di integrare competenze e professionalità differenti. 
+  Comprendere il linguaggio di ogni figura coinvolta – dall'idraulico all'elettricista, dal progettista all'installatore – significa 
+  favorire il dialogo, prevenire interferenze e criticità e trasformare le idee progettuali in soluzioni concrete, funzionali e affidabili.
+  
 quickfacts:
   - { icon: "user-tie",      title: "Professione", value: "Ingegnere edile, iscritto all'Ordine di Ancona" }
   - { icon: "location-dot",  title: "Base",        value: "Numana (AN) · Marche" }
