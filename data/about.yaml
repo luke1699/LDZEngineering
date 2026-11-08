@@ -22,6 +22,6 @@ quickfacts:
   - { icon: "droplet",       title: "Volontariato", value: "Donatore AVIS dal 2017" }
   - { icon: "dumbbell",      title: "Interessi",   value: "Edilizia, informatica, palestra" }
 stats:
-  - { value: "2023", label: "Laurea magistrale" }
-  - { value: "103", suffix: "/110", label: "Voto triennale" }
+  - { value: "2023", label: "Laurea Magistrale" }
+  - { value: "108", suffix: "/110", label: "Voto Magistrale" }
   - { value: "3", label: "Anni di sviluppo BACS", since: 2022 }
