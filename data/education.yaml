@@ -1,6 +1,12 @@
 intro: "Un percorso costruito strato dopo strato, come un pacchetto murario ben progettato."
 
 items:
+  - title: "BIM Specialist MEP"
+    school: "ICMQ"
+    period: "05/2025"
+    icon: "stamp"
+    highlight: true
+    
   - title: "Abilitazione professionale"
     school: "Ordine degli Ingegneri della Provincia di Ancona"
     period: "01/2024"
