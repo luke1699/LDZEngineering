@@ -13,23 +13,39 @@ positions:
       - "Sviluppo di un sistema di **supervisione e controllo** per aumentare vivibilità, comfort e sicurezza degli edifici."
       - "Obiettivo: ridurre **impatto ambientale e costi in bolletta**, con gestione anche da remoto."
       - "Architettura espandibile e personalizzabile, applicabile al **settore residenziale e pubblico**."
+      
+  - role: "BIM Specialist MEP"
+    company: "ICMQ"
+    period: "07/2025 – oggi"
+    location: "Numana (AN)"
+    industry: "BIM"
+    tag: "Progetto"
+    bullet_points:
+      - "**Progettazione e modellazione informativa BIM** delle discipline impiantistiche **MEP** (Mechanical, Electrical & Plumbing)." 
+      - "Sviluppo e gestione dei modelli disciplinari, coordinamento dei modelli federati, analisi delle interferenze (Clash Detection) e gestione delle criticità progettuali." 
+      - "Verifica della coerenza geometrica e informativa dei modelli, integrazione interdisciplinare e supporto all’ottimizzazione del processo progettuale ed esecutivo."
+  
+  - role: "Collaboratore"
+    company: "Acale Srl"
+    period: "09/2024 – oggi"
+    location: "Osimo (AN)"
+    industry: "Studio di Ingegneria e Architettura"
+    bullet_points:
+      - "**Progettazione integrata** del sistema edificio-impianti per appalti pubblici e privati, in ambito civile, industriale e infrastrutturale."
+      - "**Progettazione e direzione lavori** di impianti meccanici, termici, idrico-sanitari, elettrici e speciali (HVAC, antincendio, illuminazione e sistemi tecnologici), nonché dei sistemi acustici ed energetici."
+      - "Coordinamento e integrazione delle discipline progettuali, gestione delle interferenze edificio-impianti, direzione e controllo dell’esecuzione delle opere impiantistiche, verifica della conformità progettuale e normativa e supervisione tecnica delle attività di cantiere."
 
   - role: "Collaboratore"
     company: "AB Engineering"
-    period: "09/2023 – oggi"
+    period: "09/2023 – 09/2024"
     location: "Osimo (AN)"
     industry: "Ingegneria"
     # Aggiungi qui le attività svolte, ad esempio:
     # bullet_points:
     #   - "Progettazione impianti ..."
-    bullet_points: []
-
-  - role: "Sorveglianza anti-COVID"
-    company: "Presidenza della Facoltà di Ingegneria – UNIVPM"
-    period: "02/2022 – 03/2022"
-    location: "Ancona"
-    industry: "Università"
-    bullet_points: []
+    bullet_points:
+      - "Progettazione impiantistica, acustica, antincendio ed edile-architettonica."
+      - "Affiancamento alla direzione lavori appalti pubblici e privati".
 
   - role: "Tutor universitario"
     company: "Ufficio Diritto allo Studio – UNIVPM"
@@ -60,3 +76,9 @@ others:
     period: "07/2019 – 08/2019"
     location: "Osimo (AN)"
     note: "Sicurezza bagnanti in un complesso di 3 piscine."
+  - role: "Sorveglianza anti-COVID"
+    company: "Presidenza della Facoltà di Ingegneria – UNIVPM"
+    period: "02/2022 – 03/2022"
+    location: "Ancona"
+    industry: "Università"
+    bullet_points: []
