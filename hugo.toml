@@ -18,7 +18,7 @@ disableKinds = ["taxonomy", "term", "RSS"]
   lastName    = "De Zuane"
   role        = "Ingegnere Edile · Building Automation & Energia"
   kicker      = "Progettazione Integrata · Building Automation · BIM"
-  description = "Ingegnere edile specializzato in Building Automation Control System, impianti e gestione energetica degli edifici. Numana (AN)."
+  description = "Ingegnere Edile specializzato in progettazione impiantistica, Building Automation (BACS) ed efficienza energetica degli edifici. Numana (AN)."
   # Frasi che ruotano nell'hero (separate)
   taglines = [
     "Edifici che consumano meno.",
