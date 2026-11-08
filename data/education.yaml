@@ -4,8 +4,7 @@ items:
   - title: "BIM Specialist MEP"
     school: "ICMQ"
     period: "05/2025"
-    icon: "stamp"
-    highlight: true
+    icon: "fa-ruler-combined"
     
   - title: "Abilitazione professionale"
     school: "Ordine degli Ingegneri della Provincia di Ancona"
