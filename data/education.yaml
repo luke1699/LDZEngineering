@@ -5,6 +5,7 @@ items:
     school: "ICMQ"
     period: "05/2025"
     icon: "laptop-code"
+    highlight: true
     
   - title: "Abilitazione professionale"
     school: "Ordine degli Ingegneri della Provincia di Ancona"
