@@ -6,5 +6,5 @@ layout: "projects"
 icon: "folder-open"
 summary: "Lavori di impianti, BIM ed efficienza energetica."
 menus:
-main: { weight: 35 }
+  main: { weight: 35 }
 ---
