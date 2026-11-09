@@ -1,6 +1,6 @@
 ---
 title: "Formazione"
-eyebrow: "04 · Formazione"
+eyebrow: "06 · Formazione"
 intro: "Un percorso costruito strato dopo strato, come un pacchetto murario ben progettato."
 layout: "education"
 icon: "graduation-cap"
