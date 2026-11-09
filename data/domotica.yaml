@@ -1,0 +1,29 @@
+# Pagina "Domotica". Tutti i testi sono modificabili qui.
+
+overview:
+  - "Ho sviluppato un sistema di supervisione e controllo pensato per aumentare vivibilità, comfort e sicurezza di un edificio."
+  - "L'obiettivo è ridurre impatto ambientale e costi in bolletta, con la possibilità di gestire tutto anche da remoto. L'architettura è espandibile e adatta sia al residenziale sia al pubblico."
+hint: "Tocca la persona nel disegno per accendere le luci."
+
+features:
+  - { icon: "lightbulb",        title: "Luci",              text: "Accensione per zona e scenari, anche da smartphone." }
+  - { icon: "table-cells-large", title: "Tapparelle",        text: "Apertura e chiusura manuale o programmata." }
+  - { icon: "temperature-half",  title: "Clima",             text: "Misura di temperatura e umidità e regolazione per ambiente." }
+  - { icon: "wind",              title: "VMC e aria",        text: "Ventilazione controllata in base alla qualità dell'aria (CO₂)." }
+  - { icon: "solar-panel",       title: "Energia",           text: "Monitoraggio di produzione fotovoltaica e consumi." }
+  - { icon: "mobile-screen",     title: "Accesso remoto",    text: "Un'unica app per controllare la casa ovunque." }
+
+layers:
+  - { title: "Sensori e attuatori", text: "Temperatura, umidità, CO₂, luci, tapparelle, VMC." }
+  - { title: "Rete e protocolli",   text: "Comunicazione tra i dispositivi di campo e il sistema." }
+  - { title: "Supervisione",        text: "Logica di controllo, automazioni e scenari." }
+  - { title: "Interfaccia",         text: "Dashboard e app per l'utente, anche da remoto." }
+
+# Aggiungi qui hardware e software reali (es. marca dei moduli, protocolli, centrale).
+components:
+  - title: "Software"
+    items: ["Home Assistant"]
+  # - title: "Hardware"
+  #   items: ["Modulo ...", "Sensore ..."]
+  # - title: "Protocolli"
+  #   items: ["KNX", "Modbus", "MQTT"]

@@ -1,0 +1,52 @@
+# Pagina "Progetti". Per aggiungere un progetto copia un blocco in "projects".
+# categories: uno o più id tra quelli definiti in "filters" (servono al filtro in alto).
+# link: opzionale (se vuoto il pulsante non compare).
+
+filters:
+  - { id: "bacs",   label: "Building Automation" }
+  - { id: "bim",    label: "BIM" }
+  - { id: "energia", label: "Energia e impianti" }
+
+projects:
+  - title: "Sistema di supervisione e controllo per edifici"
+    period: "2022 – oggi"
+    sector: "Residenziale e pubblico"
+    categories: ["bacs"]
+    summary: "Sistema per gestire luci, tapparelle, clima e VMC da un'unica interfaccia, anche da remoto, per aumentare comfort e sicurezza e ridurre i costi in bolletta."
+    highlights:
+      - "Architettura espandibile e personalizzabile."
+      - "Scenari programmati e controllo da smartphone."
+    tools: ["Home Assistant"]
+    link: "domotica/"
+    link_label: "Scopri il sistema"
+
+  - title: "Modellazione BIM degli impianti MEP"
+    period: "2025 – oggi"
+    sector: "BIM"
+    categories: ["bim"]
+    summary: "Modellazione informativa delle discipline impiantistiche, coordinamento dei modelli federati e analisi delle interferenze."
+    highlights:
+      - "Clash detection e gestione delle criticità progettuali."
+      - "Verifica della coerenza geometrica e informativa dei modelli."
+    tools: ["Revit", "BIM"]
+
+  - title: "Progettazione integrata edificio-impianti"
+    period: "2024 – oggi"
+    sector: "Civile, industriale, infrastrutture"
+    categories: ["energia", "bim"]
+    summary: "Progettazione e direzione lavori di impianti meccanici, termici, idrico-sanitari, elettrici e speciali per appalti pubblici e privati."
+    highlights:
+      - "Coordinamento delle discipline e verifica di conformità normativa."
+    tools: ["HVAC", "Antincendio", "Illuminazione"]
+
+  # ── Modello da copiare ──────────────────────────────────────
+  # - title: "Nome del progetto"
+  #   period: "2025"
+  #   sector: "Residenziale"
+  #   categories: ["energia"]
+  #   summary: "Cosa hai fatto e perché."
+  #   highlights:
+  #     - "Risultato misurabile (es. consumi -20 %)."
+  #   tools: ["Revit"]
+  #   link: ""
+  #   link_label: ""
