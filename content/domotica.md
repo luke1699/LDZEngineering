@@ -7,3 +7,4 @@ icon: "house-signal"
 summary: "Il mio sistema di supervisione per l'edificio."
 menus:
 main: { weight: 36 }
+---
