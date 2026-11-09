@@ -1,0 +1,49 @@
+{{ with hugo.Data.projects }}
+<section id="projects" class="section section--page">
+  <div class="container">
+    <div class="filters reveal" id="projFilters" role="group" aria-label="Filtra i progetti">
+      <button type="button" class="chip filter is-active" data-filter="all" aria-pressed="true">Tutti</button>
+      {{ range .filters }}<button type="button" class="chip filter" data-filter="{{ .id }}" aria-pressed="false">{{ .label }}</button>{{ end }}
+    </div>
+
+    <div class="cards cards--projects" id="projGrid">
+      {{ range .projects }}
+      <article class="card project reveal" data-cat="{{ delimit .categories " " }}">
+        <p class="project__meta">{{ .period }}{{ with .sector }} · {{ . }}{{ end }}</p>
+        <h3>{{ .title }}</h3>
+        <p>{{ .summary }}</p>
+        {{ with .highlights }}
+        <ul class="job__list">{{ range . }}<li>{{ . | markdownify }}</li>{{ end }}</ul>
+        {{ end }}
+        {{ with .tools }}
+        <div class="job__tags">{{ range . }}<span class="tag">{{ . }}</span>{{ end }}</div>
+        {{ end }}
+        {{ $label := .link_label | default "Scopri di più" }}
+        {{ with .link }}<a class="btn btn--ghost project__link" href="{{ . | relURL }}">{{ $label }}</a>{{ end }}
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+<script>
+  (function () {
+    var bar = document.getElementById('projFilters');
+    if (!bar) return;
+    var cards = document.querySelectorAll('#projGrid .project');
+    bar.addEventListener('click', function (e) {
+      var b = e.target.closest('.filter');
+      if (!b) return;
+      var f = b.getAttribute('data-filter');
+      bar.querySelectorAll('.filter').forEach(function (x) {
+        var on = x === b;
+        x.classList.toggle('is-active', on);
+        x.setAttribute('aria-pressed', String(on));
+      });
+      cards.forEach(function (c) {
+        var cats = (c.getAttribute('data-cat') || '').split(' ');
+        c.hidden = !(f === 'all' || cats.indexOf(f) > -1);
+      });
+    });
+  })();
+</script>
+{{ end }}

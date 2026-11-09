@@ -1,0 +1,46 @@
+{{ with hugo.Data.domotica }}
+<section id="domotica" class="section section--page">
+  <div class="container">
+
+    <div class="domo__intro">
+      <div class="hero__visual reveal">
+        {{ partial "building-svg.html" . }}
+        {{ with .hint }}<p class="hero__hint" id="houseHint"><span aria-hidden="true">↳</span> {{ . }}</p>{{ end }}
+      </div>
+      <div class="prose reveal">
+        {{ range $i, $p := .overview }}<p{{ if eq $i 0 }} class="lead"{{ end }}>{{ $p }}</p>{{ end }}
+        <p><a class="btn btn--primary" href="{{ "contatti/" | relURL }}"><i class="fa-solid fa-paper-plane" aria-hidden="true"></i> Parliamone</a></p>
+      </div>
+    </div>
+
+    <h2 class="domo__title reveal">Cosa gestisce</h2>
+    <div class="cards">
+      {{ range .features }}
+      <article class="card domain reveal">
+        <span class="domain__icon"><i class="fa-solid fa-{{ .icon }}" aria-hidden="true"></i></span>
+        <h3>{{ .title }}</h3>
+        <p>{{ .text }}</p>
+      </article>
+      {{ end }}
+    </div>
+
+    <h2 class="domo__title reveal">Come è fatto</h2>
+    <ol class="layers">
+      {{ range .layers }}
+      <li class="card layer reveal"><h3>{{ .title }}</h3><p>{{ .text }}</p></li>
+      {{ end }}
+    </ol>
+
+    {{ with .components }}
+    <h2 class="domo__title reveal">Componenti</h2>
+    {{ range . }}
+    <div class="domo__group reveal">
+      <h3 class="tech__title">{{ .title }}</h3>
+      <div class="chips">{{ range .items }}<span class="chip">{{ . }}</span>{{ end }}</div>
+    </div>
+    {{ end }}
+    {{ end }}
+
+  </div>
+</section>
+{{ end }}
